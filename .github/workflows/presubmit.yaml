@@ -10,8 +10,8 @@ jobs:
   buildifier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff # v5
         with:
           go-version: '1.24.0'
       - name: install
@@ -24,11 +24,11 @@ jobs:
   prettier:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - uses: pnpm/action-setup@eae0cfeb286e66ffb5155f1a79b90583a127a68b # v2
         with:
           version: 10.17.1
-      - uses: actions/setup-node@v5
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
         with:
           node-version: 22.18.0
           cache: 'pnpm'
@@ -45,8 +45,8 @@ jobs:
       run:
         working-directory: ${{ matrix.folder }}
     steps:
-      - uses: actions/checkout@v5
-      - uses: bazel-contrib/setup-bazel@0.15.0
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5
+      - uses: bazel-contrib/setup-bazel@8d2cb86a3680a820c3e219597279ce3f80d17a47 # 0.15.0
         with:
           bazelisk-cache: true
           disk-cache: ${{ github.workflow }}
