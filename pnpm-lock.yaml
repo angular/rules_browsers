@@ -26,8 +26,8 @@ importers:
         specifier: ^3.0.2
         version: 3.0.2(rollup@4.39.0)
       '@types/jasmine':
-        specifier: ^5.1.7
-        version: 5.1.7
+        specifier: ^6.0.0
+        version: 6.0.0
       '@types/node':
         specifier: ^22.14.0
         version: 22.14.0
@@ -47,8 +47,8 @@ importers:
         specifier: ^7.1.0
         version: 7.1.0
       jasmine:
-        specifier: ^5.8.0
-        version: 5.8.0
+        specifier: ^6.0.0
+        version: 6.1.0
       protractor:
         specifier: ^7.0.0
         version: 7.0.0
@@ -60,7 +60,7 @@ importers:
         version: 5.8.2
       web-test-runner-jasmine:
         specifier: 0.1.4
-        version: 0.1.4(bufferutil@4.1.0)(jasmine-core@6.1.0)(jasmine@5.8.0)(utf-8-validate@6.0.6)
+        version: 0.1.4(bufferutil@4.1.0)(jasmine-core@6.1.0)(jasmine@6.1.0)(utf-8-validate@6.0.6)
     devDependencies:
       '@angular/ng-dev':
         specifier: https://github.com/angular/dev-infra-private-ng-dev-builds.git#5a0a8a72a00865eb0d787908876eacb51138113a
@@ -1096,9 +1096,6 @@ packages:
 
   '@types/istanbul-reports@3.0.4':
     resolution: {integrity: sha512-pk2B1NWalF9toCRu6gjBzR69syFjP4Od8WRAX+0mmf9lAjCRicLOWc+ZrxZHx/0XRjotgkF9t6iaMJ+aXcOdZQ==}
-
-  '@types/jasmine@5.1.7':
-    resolution: {integrity: sha512-DVOfk9FaClQfNFpSfaML15jjB5cjffDMvjtph525sroR5BEAW2uKnTOYUTqTFuZFjNvH0T5XMIydvIctnUKufw==}
 
   '@types/jasmine@6.0.0':
     resolution: {integrity: sha512-18lgGsLmEh3VJk9eZ5wAjTISxdqzl6YOwu8UdMpolajN57QOCNbl+AbHUd+Yu9ItrsFdB+c8LSZSGNg8nHaguw==}
@@ -2337,9 +2334,6 @@ packages:
   jasmine-core@2.8.0:
     resolution: {integrity: sha512-SNkOkS+/jMZvLhuSx1fjhcNWUC/KG6oVyFUGkSBEr9n1axSNduWU8GlI7suaHXr4yxjet6KjrUZxUTE5WzzWwQ==}
 
-  jasmine-core@5.8.0:
-    resolution: {integrity: sha512-Q9dqmpUAfptwyueW3+HqBOkSuYd9I/clZSSfN97wXE/Nr2ROFNCwIBEC1F6kb3QXS9Fcz0LjFYSDQT+BiwjuhA==}
-
   jasmine-core@6.1.0:
     resolution: {integrity: sha512-p/tjBw58O6vxKIWMlrU+yys8lqR3+l3UrqwNTT7wpj+dQ7N4etQekFM8joI+cWzPDYqZf54kN+hLC1+s5TvZvg==}
 
@@ -2348,10 +2342,6 @@ packages:
 
   jasmine@2.8.0:
     resolution: {integrity: sha512-KbdGQTf5jbZgltoHs31XGiChAPumMSY64OZMWLNYnEnMfG5uwGBhffePwuskexjT+/Jea/gU3qAU8344hNohSw==}
-    hasBin: true
-
-  jasmine@5.8.0:
-    resolution: {integrity: sha512-1V6HGa0+TMoMY20+/vp++RqLlL1noupV8awzV6CiPuICC0g7iKZ9z87zV2KyelRyoig0G1lHn7ueElXVMGVagg==}
     hasBin: true
 
   jasmine@6.1.0:
@@ -4554,8 +4544,6 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
 
-  '@types/jasmine@5.1.7': {}
-
   '@types/jasmine@6.0.0': {}
 
   '@types/keygrip@1.0.6': {}
@@ -5959,8 +5947,6 @@ snapshots:
 
   jasmine-core@2.8.0: {}
 
-  jasmine-core@5.8.0: {}
-
   jasmine-core@6.1.0: {}
 
   jasmine-reporters@2.5.2:
@@ -5973,11 +5959,6 @@ snapshots:
       exit: 0.1.2
       glob: 7.2.3
       jasmine-core: 2.8.0
-
-  jasmine@5.8.0:
-    dependencies:
-      glob: 10.4.5
-      jasmine-core: 5.8.0
 
   jasmine@6.1.0:
     dependencies:
@@ -6975,12 +6956,12 @@ snapshots:
 
   web-streams-polyfill@3.3.3: {}
 
-  web-test-runner-jasmine@0.1.4(bufferutil@4.1.0)(jasmine-core@6.1.0)(jasmine@5.8.0)(utf-8-validate@6.0.6):
+  web-test-runner-jasmine@0.1.4(bufferutil@4.1.0)(jasmine-core@6.1.0)(jasmine@6.1.0)(utf-8-validate@6.0.6):
     dependencies:
       '@web/test-runner': 0.20.2(bufferutil@4.1.0)(utf-8-validate@6.0.6)
       '@web/test-runner-core': 0.13.4(bufferutil@4.1.0)(utf-8-validate@6.0.6)
       ansi-colors: 4.1.3
-      jasmine: 5.8.0
+      jasmine: 6.1.0
       jasmine-core: 6.1.0
     transitivePeerDependencies:
       - bare-buffer
