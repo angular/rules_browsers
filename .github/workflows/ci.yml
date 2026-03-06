@@ -26,12 +26,12 @@ jobs:
         working-directory: ${{ matrix.folder }}
     steps:
       - name: Initialize environment
-        uses: angular/dev-infra/github-actions/npm/checkout-and-setup-node@c4344a4e20dbdf9cb8eeb7a7eb91431b98eabd99
+        uses: angular/dev-infra/github-actions/npm/checkout-and-setup-node@22e0407413109186075cfebf3173549d37d4f4a4
         with:
           disable-package-manager-cache: true
       - name: Setup Bazel
-        uses: angular/dev-infra/github-actions/bazel/setup@c4344a4e20dbdf9cb8eeb7a7eb91431b98eabd99
+        uses: angular/dev-infra/github-actions/bazel/setup@22e0407413109186075cfebf3173549d37d4f4a4
       - name: Setup Bazel Remote Caching
-        uses: angular/dev-infra/github-actions/bazel/configure-remote@c4344a4e20dbdf9cb8eeb7a7eb91431b98eabd99
+        uses: angular/dev-infra/github-actions/bazel/configure-remote@22e0407413109186075cfebf3173549d37d4f4a4
       - name: Test
         run: pnpm bazel test //...

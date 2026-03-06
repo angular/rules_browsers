@@ -32,7 +32,7 @@
     "web-test-runner-jasmine": "0.1.4"
   },
   "devDependencies": {
-    "@angular/ng-dev": "https://github.com/angular/dev-infra-private-ng-dev-builds.git#5a0a8a72a00865eb0d787908876eacb51138113a",
+    "@angular/ng-dev": "https://github.com/angular/dev-infra-private-ng-dev-builds.git#a92db02ad1facfddb722d181709f774b4892593d",
     "@bazel/buildifier": "^8.0.0",
     "prettier": "^3.8.0"
   },
