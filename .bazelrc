@@ -4,3 +4,12 @@ common --@aspect_rules_ts//ts:skipLibCheck=always
 common --@aspect_rules_ts//ts:default_to_tsc_transpiler
 
 test --test_output=all
+
+# Frozen lockfile
+common --lockfile_mode=error
+
+# More details on failures
+build --verbose_failures=true
+
+# CI supports colors but Bazel does not detect it.
+common --color=yes
