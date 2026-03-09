@@ -3,8 +3,8 @@
   "extends": ["github>angular/dev-infra//renovate-presets/default.json5"],
   "packageRules": [
     {
+      "matchManagers": ["bazel", "bazel-module", "bazelisk"],
       "postUpgradeTasks": {
-        "matchManagers": ["bazel", "bazel-module", "bazelisk"],
         "commands": [
           "bash -c \"git restore .npmrc || true\"",
           "bazel mod deps --lockfile_mode=update",
