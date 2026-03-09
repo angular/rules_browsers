@@ -8,3 +8,5 @@ js_library(
         "wtr.config.mjs",
     ],
 )
+
+exports_files(["wtr_runner.mjs"])
