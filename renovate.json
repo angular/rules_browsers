@@ -1,4 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>angular/dev-infra//renovate-presets/default.json5"]
+  "extends": ["github>angular/dev-infra//renovate-presets/default.json5"],
+  "packageRules": [
+    {
+      "postUpgradeTasks": {
+        "matchManagers": ["bazel", "bazel-module", "bazelisk"],
+        "commands": [
+          "bash -c \"git restore .npmrc || true\"",
+          "bazel mod deps --lockfile_mode=update",
+          "bash -c \"cd ./test\"",
+          "bazel mod deps --lockfile_mode=update",
+          "bash -c \"cd ../\""
+        ],
+        "executionMode": "update"
+      }
+    }
+  ]
 }
