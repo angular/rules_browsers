@@ -59,8 +59,8 @@ importers:
         specifier: 5.8.2
         version: 5.8.2
       web-test-runner-jasmine:
-        specifier: 0.1.4
-        version: 0.1.4(bufferutil@4.1.0)(jasmine-core@6.1.0)(jasmine@6.1.0)(utf-8-validate@6.0.6)
+        specifier: 0.2.0
+        version: 0.2.0(bufferutil@4.1.0)(jasmine-core@6.1.0)(utf-8-validate@6.0.6)
     devDependencies:
       '@angular/ng-dev':
         specifier: https://github.com/angular/dev-infra-private-ng-dev-builds.git#a92db02ad1facfddb722d181709f774b4892593d
@@ -1263,10 +1263,6 @@ packages:
 
   ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
-
-  ansi-colors@4.1.3:
-    resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
-    engines: {node: '>=6'}
 
   ansi-escapes@4.3.2:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
@@ -3279,12 +3275,11 @@ packages:
     resolution: {integrity: sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw==}
     engines: {node: '>= 8'}
 
-  web-test-runner-jasmine@0.1.4:
-    resolution: {integrity: sha512-SVR+SiacD7UuHrr5PwvZ+mDmDT940vuURK44XJS5WEqBdjZMdrmkgJQOyQgPbK2IKQi/eODKCBJ6rTkTKLIeCA==}
-    engines: {node: ^22.15.1}
+  web-test-runner-jasmine@0.2.0:
+    resolution: {integrity: sha512-OgREqleExLUBNj9POdzJ35V/S9OMhNNKjTOvasfx6fvtGKXbyfLa5qyCH2ltHFel6vCl5crjC8uQMr+KecnUgA==}
+    engines: {node: '>=24.0.0'}
     peerDependencies:
-      jasmine: ^5.8.0
-      jasmine-core: ^5.8.0
+      jasmine-core: ^6.0.1
 
   web-vitals@4.2.4:
     resolution: {integrity: sha512-r4DIlprAGwJ7YM11VZp4R884m0Vmgr6EAKe3P+kO0PPj3Unqyvv59rczf6UiGcb9Z8QxZVcqKNwv/g0WNdWwsw==}
@@ -4857,8 +4852,6 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       json-schema-traverse: 0.4.1
       uri-js: 4.4.1
-
-  ansi-colors@4.1.3: {}
 
   ansi-escapes@4.3.2:
     dependencies:
@@ -6965,12 +6958,10 @@ snapshots:
 
   web-streams-polyfill@3.3.3: {}
 
-  web-test-runner-jasmine@0.1.4(bufferutil@4.1.0)(jasmine-core@6.1.0)(jasmine@6.1.0)(utf-8-validate@6.0.6):
+  web-test-runner-jasmine@0.2.0(bufferutil@4.1.0)(jasmine-core@6.1.0)(utf-8-validate@6.0.6):
     dependencies:
       '@web/test-runner': 0.20.2(bufferutil@4.1.0)(utf-8-validate@6.0.6)
       '@web/test-runner-core': 0.13.4(bufferutil@4.1.0)(utf-8-validate@6.0.6)
-      ansi-colors: 4.1.3
-      jasmine: 6.1.0
       jasmine-core: 6.1.0
     transitivePeerDependencies:
       - bare-buffer
