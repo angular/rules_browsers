@@ -63,8 +63,8 @@ importers:
         version: 0.2.0(bufferutil@4.1.0)(jasmine-core@6.1.0)(utf-8-validate@6.0.6)
     devDependencies:
       '@angular/ng-dev':
-        specifier: https://github.com/angular/dev-infra-private-ng-dev-builds.git#a92db02ad1facfddb722d181709f774b4892593d
-        version: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d
+        specifier: https://github.com/angular/dev-infra-private-ng-dev-builds.git#f9eabeac6431a685f8ff3258df26039f810171a8
+        version: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/f9eabeac6431a685f8ff3258df26039f810171a8
       '@bazel/buildifier':
         specifier: ^8.0.0
         version: 8.2.1
@@ -86,9 +86,9 @@ packages:
   '@actions/io@3.0.2':
     resolution: {integrity: sha512-nRBchcMM+QK1pdjO7/idu86rbJI5YHUKCvKs0KxnSYbVe3F51UfGxuZX4Qy/fWlp6l7gWFwIkrOzN+oUK03kfw==}
 
-  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d':
-    resolution: {tarball: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d}
-    version: 0.0.0-22e0407413109186075cfebf3173549d37d4f4a4
+  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/f9eabeac6431a685f8ff3258df26039f810171a8':
+    resolution: {tarball: https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/f9eabeac6431a685f8ff3258df26039f810171a8}
+    version: 0.0.0-a84b05cc48579b0a567fbafde11203864c6af8be
     hasBin: true
 
   '@babel/code-frame@7.26.2':
@@ -1751,8 +1751,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  ejs@4.0.1:
-    resolution: {integrity: sha512-krvQtxc0btwSm/nvnt1UpnaFDFVJpJ0fdckmALpCgShsr/iGYHTnJiUliZTgmzq/UxTX33TtOQVKaNigMQp/6Q==}
+  ejs@5.0.1:
+    resolution: {integrity: sha512-COqBPFMxuPTPspXl2DkVYaDS3HtrD1GpzOGkNTJ1IYkifq/r9h8SVEFrjA3D9/VJGOEoMQcrlhpntcSUrM8k6A==}
     engines: {node: '>=0.12.18'}
     hasBin: true
 
@@ -1923,9 +1923,6 @@ packages:
   fetch-blob@3.2.0:
     resolution: {integrity: sha512-7yAQpD2UMJzLi1Dqv7qFYnPbaPx7ZfFK6PiIxQ4PfkGPyNyl2Ugx+a/umUonmKqjhM4DnfbMvdX6otXq83soQQ==}
     engines: {node: ^12.20 || >= 14.13}
-
-  filelist@1.0.6:
-    resolution: {integrity: sha512-5giy2PkLYY1cP39p17Ech+2xlpTRL9HLspOfEgm0L6CwBXBTgsK5ou0JtzYuepxkaQ/tvhCFIJ5uXo0OrM2DxA==}
 
   fill-range@7.1.1:
     resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
@@ -2328,11 +2325,6 @@ packages:
   jackspeak@3.4.3:
     resolution: {integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw==}
 
-  jake@10.9.4:
-    resolution: {integrity: sha512-wpHYzhxiVQL+IV05BLE2Xn34zW1S223hvjtqk0+gsPrwd/8JNLXJgZZM/iPFsYc1xyphF+6M6EvdE5E9MBGkDA==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   jasmine-core@2.8.0:
     resolution: {integrity: sha512-SNkOkS+/jMZvLhuSx1fjhcNWUC/KG6oVyFUGkSBEr9n1axSNduWU8GlI7suaHXr4yxjet6KjrUZxUTE5WzzWwQ==}
 
@@ -2515,10 +2507,6 @@ packages:
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
-
-  minimatch@5.1.9:
-    resolution: {integrity: sha512-7o1wEA2RyMP7Iu7GNba9vc0RWWGACJOCZBJX2GJWip0ikV+wcOsgVuY9uE8CPiyQhkGFSlhuSkZPavN7u1c2Fw==}
-    engines: {node: '>=10'}
 
   minimatch@7.4.6:
     resolution: {integrity: sha512-sBz8G/YjVniEz6lKPNpKxXwazJe4c19fEfV2GDMX6AjFz+MX9uDWIZW8XreVhkFW3fkIdTv/gxWr/Kks5FFAVw==}
@@ -3353,18 +3341,6 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.18.3:
-    resolution: {integrity: sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==}
-    engines: {node: '>=10.0.0'}
-    peerDependencies:
-      bufferutil: ^4.0.1
-      utf-8-validate: '>=5.0.2'
-    peerDependenciesMeta:
-      bufferutil:
-        optional: true
-      utf-8-validate:
-        optional: true
-
   ws@8.19.0:
     resolution: {integrity: sha512-blAT2mjOEIi0ZzruJfIhb3nps74PRWTCz1IjglWEEpQl5XS/UNama6u2/rjFkDDouqr4L67ry+1aGIALViWjDg==}
     engines: {node: '>=10.0.0'}
@@ -3456,7 +3432,7 @@ snapshots:
 
   '@actions/io@3.0.2': {}
 
-  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/a92db02ad1facfddb722d181709f774b4892593d':
+  '@angular/ng-dev@https://codeload.github.com/angular/dev-infra-private-ng-dev-builds/tar.gz/f9eabeac6431a685f8ff3258df26039f810171a8':
     dependencies:
       '@actions/core': 3.0.0
       '@conventional-changelog/git-client': 2.6.0(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.3.0)
@@ -3490,7 +3466,7 @@ snapshots:
       cli-progress: 3.12.0
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.3.0
-      ejs: 4.0.1
+      ejs: 5.0.1
       encoding: 0.1.13
       fast-glob: 3.3.3
       firebase: 12.10.0
@@ -3995,7 +3971,7 @@ snapshots:
       google-auth-library: 10.6.1(supports-color@10.2.2)
       p-retry: 4.6.2
       protobufjs: 7.5.4
-      ws: 8.18.3(bufferutil@4.1.0)(utf-8-validate@6.0.6)
+      ws: 8.19.0(bufferutil@4.1.0)(utf-8-validate@6.0.6)
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -5293,9 +5269,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  ejs@4.0.1:
-    dependencies:
-      jake: 10.9.4
+  ejs@5.0.1: {}
 
   emoji-regex@10.6.0: {}
 
@@ -5470,10 +5444,6 @@ snapshots:
     dependencies:
       node-domexception: 1.0.0
       web-streams-polyfill: 3.3.3
-
-  filelist@1.0.6:
-    dependencies:
-      minimatch: 5.1.9
 
   fill-range@7.1.1:
     dependencies:
@@ -5946,12 +5916,6 @@ snapshots:
     optionalDependencies:
       '@pkgjs/parseargs': 0.11.0
 
-  jake@10.9.4:
-    dependencies:
-      async: 3.2.6
-      filelist: 1.0.6
-      picocolors: 1.1.1
-
   jasmine-core@2.8.0: {}
 
   jasmine-core@6.1.0: {}
@@ -6158,10 +6122,6 @@ snapshots:
   minimatch@3.1.2:
     dependencies:
       brace-expansion: 1.1.11
-
-  minimatch@5.1.9:
-    dependencies:
-      brace-expansion: 2.0.1
 
   minimatch@7.4.6:
     dependencies:
@@ -7047,11 +7007,6 @@ snapshots:
   wrappy@1.0.2: {}
 
   ws@7.5.10(bufferutil@4.1.0)(utf-8-validate@6.0.6):
-    optionalDependencies:
-      bufferutil: 4.1.0
-      utf-8-validate: 6.0.6
-
-  ws@8.18.3(bufferutil@4.1.0)(utf-8-validate@6.0.6):
     optionalDependencies:
       bufferutil: 4.1.0
       utf-8-validate: 6.0.6
