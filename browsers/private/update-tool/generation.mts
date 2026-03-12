@@ -33,9 +33,7 @@ export function sortVersions(versions: Versions): Versions {
   return sortedVersions;
 }
 
-export function generateRepoInfo(
-  binaries: BrowserBinaryInfo[],
-): Record<string, RepoInfo> {
+export function generateRepoInfo(binaries: BrowserBinaryInfo[]): Record<string, RepoInfo> {
   const repos: Record<string, RepoInfo> = {};
 
   for (const binary of binaries) {

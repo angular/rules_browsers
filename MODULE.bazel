@@ -30,7 +30,26 @@ use_repo(
 
 # Miscellaneous dependencies.
 bazel_dep(name = "platforms", version = "1.0.0")
-bazel_dep(name = "bazel_skylib", version = "1.8.2")
+bazel_dep(name = "bazel_skylib", version = "1.9.0")
+
+# Dev dependencies
+bazel_dep(name = "rules_angular", dev_dependency = True)
+local_path_override(
+    module_name = "rules_angular",
+    path = "../rules_angular",
+)
+
+bazel_dep(name = "rules_sass", dev_dependency = True)
+local_path_override(
+    module_name = "rules_sass",
+    path = "../rules_sass",
+)
+
+bazel_dep(name = "devinfra", dev_dependency = True)
+local_path_override(
+    module_name = "devinfra",
+    path = "../../../",
+)
 
 # Manually specify a recent Node.js version.
 bazel_dep(name = "rules_nodejs", version = "6.7.3")
@@ -51,7 +70,7 @@ node.toolchain(
 use_repo(node, "nodejs_toolchains")
 
 # JS
-bazel_dep(name = "aspect_rules_js", version = "3.0.2")
+bazel_dep(name = "aspect_rules_js", version = "3.0.3")
 
 pnpm = use_extension("@aspect_rules_js//npm:extensions.bzl", "pnpm")
 pnpm.pnpm(
@@ -66,11 +85,9 @@ npm.npm_translate_lock(
     name = "npm_rules_browsers",
     data = [
         "//:package.json",
-        "//:patches/@web__test-runner-chrome@0.18.0.patch",
     ],
     npmrc = "//:.npmrc",
     pnpm_lock = "//:pnpm-lock.yaml",
-    verify_node_modules_ignored = "//:.bazelignore",
 )
 use_repo(npm, "npm_rules_browsers")
 

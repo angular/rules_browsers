@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng-dev": "bash ../../../tools/local-dev.sh"
   },
   "packageManager": "pnpm@10.31.0",
   "engines": {
@@ -31,16 +31,11 @@
     "typescript": "5.8.2",
     "web-test-runner-jasmine": "0.2.0"
   },
-  "devDependencies": {
-    "@angular/ng-dev": "https://github.com/angular/dev-infra-private-ng-dev-builds.git#a92db02ad1facfddb722d181709f774b4892593d",
-    "@bazel/buildifier": "^8.0.0",
-    "prettier": "^3.8.0"
-  },
   "pnpm": {
     "onlyBuiltDependencies": [],
     "overrides": {
-      "puppeteer": "24.38.0",
-      "puppeteer-core": "24.38.0"
+      "puppeteer": "24.39.0",
+      "puppeteer-core": "24.39.0"
     },
     "packageExtensions": {
       "grpc-gcp": {
@@ -48,9 +43,6 @@
           "protobufjs": "*"
         }
       }
-    },
-    "patchedDependencies": {
-      "@web/test-runner-chrome@0.18.0": "patches/@web__test-runner-chrome@0.18.0.patch"
     }
   }
 }

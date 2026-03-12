@@ -1,9 +1,4 @@
-import {
-  Browser,
-  BrowserPlatform,
-  computeExecutablePath,
-  getDownloadUrl,
-} from '@puppeteer/browsers';
+import {Browser, BrowserPlatform, computeExecutablePath, getDownloadUrl} from '@puppeteer/browsers';
 import path from 'node:path';
 
 import {platforms} from './platforms.mjs';

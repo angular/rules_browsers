@@ -11,12 +11,7 @@ import {mkdtemp} from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import {downloadAndHashBinariesForBrowser} from './download.mjs';
-import {
-  generateRepoInfo,
-  generateVersionsBzlFile,
-  sortVersions,
-  Versions,
-} from './generation.mjs';
+import {generateRepoInfo, generateVersionsBzlFile, sortVersions, Versions} from './generation.mjs';
 import fs from 'node:fs/promises';
 import {getChromeMilestones, getFirefoxMilestones} from './versions.mjs';
 import {exec} from 'node:child_process';
@@ -93,13 +88,7 @@ async function downloadMilestonesAndWriteVersionsFiles({
   // calculate the integrity of the files.
   const binariesForBuilds = await Promise.all(
     filteredNewBuildIds.map((buildId) =>
-      downloadAndHashBinariesForBrowser(
-        tmpDir,
-        browser,
-        buildId,
-        {},
-        excludeFilesForPerformance,
-      ),
+      downloadAndHashBinariesForBrowser(tmpDir, browser, buildId, {}, excludeFilesForPerformance),
     ),
   );
 
@@ -121,11 +110,7 @@ async function downloadMilestonesAndWriteVersionsFiles({
   await fs.writeFile(jsonFilePath, JSON.stringify(versions, null, 2) + '\n');
   await fs.writeFile(
     bzlFilePath,
-    generateVersionsBzlFile(
-      getReadableBrowserName(browser),
-      defaultVersion,
-      versions,
-    ),
+    generateVersionsBzlFile(getReadableBrowserName(browser), defaultVersion, versions),
   );
 
   // Format the resulting `.json` file. Prettier may apply some formatting that

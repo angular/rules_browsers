@@ -17,9 +17,7 @@ assert(testServerPort, 'No test server port specified');
 assert(testPackage !== undefined, 'No test package specified');
 
 const extraUserConfig =
-  extraUserConfigPath !== undefined
-    ? JSON.parse(fs.readFileSync(extraUserConfigPath, 'utf8'))
-    : {};
+  extraUserConfigPath !== undefined ? JSON.parse(fs.readFileSync(extraUserConfigPath, 'utf8')) : {};
 
 // Browser artifacts are short paths from a different repository, so
 // we need to join them with the current workspace root in the runfiles tree.
@@ -44,12 +42,7 @@ const capabilities: any = {
   browserName: 'chrome',
   chromeOptions: {
     binary: chromeHeadlessPath,
-    args: [
-      '--headless',
-      '--no-sandbox',
-      '--disable-gpu',
-      '--disable-dev-shm-usage',
-    ],
+    args: ['--headless', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage'],
   },
 };
 if (enablePerfLogging) {

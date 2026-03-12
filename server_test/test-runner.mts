@@ -77,9 +77,7 @@ async function runTest(serverPath: string, testPath: string) {
       }
 
       if (code !== 0 || signal !== null) {
-        reject(
-          Error(`Server exited with error. Code: ${code}, signal: ${signal}`),
-        );
+        reject(Error(`Server exited with error. Code: ${code}, signal: ${signal}`));
         abortController.abort();
       }
       server = null;

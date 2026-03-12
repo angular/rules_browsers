@@ -1,15 +1,14 @@
-build --symlink_prefix=dist/
-
 common --@aspect_rules_ts//ts:skipLibCheck=always
 common --@aspect_rules_ts//ts:default_to_tsc_transpiler
 
-test --test_output=all
+try-import ../../../.bazelrc.common
 
-# Frozen lockfile
-common --lockfile_mode=error
+####################################################
+# User bazel configuration
+# NOTE: This needs to be the *last* entry in the config to allow for it to override other
+#   configuration in this file.
+####################################################
 
-# More details on failures
-build --verbose_failures=true
-
-# CI supports colors but Bazel does not detect it.
-common --color=yes
+# Load any settings which are specific to the current user. Needs to be *last* statement
+# in this config, as the user configuration should be able to overwrite flags from this file.
+try-import ../../../.bazelrc.user

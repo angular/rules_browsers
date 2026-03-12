@@ -52,9 +52,7 @@ export default {
     puppeteerLauncher({
       concurrency: 1,
       launchOptions: {
-        executablePath: firefoxBin
-          ? await fs.realpath(firefoxBin)
-          : chromeHeadlessBin,
+        executablePath: firefoxBin ? await fs.realpath(firefoxBin) : chromeHeadlessBin,
         browser: firefoxBin ? 'firefox' : 'chrome',
         args: chromeHeadlessBin
           ? [
